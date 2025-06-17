@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Rana | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+      }
+
+      body {
+        background-color: #0f0f0f;
+        color: #f5f5f5;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 3rem;
+        background-color: #111111;
+        border-bottom: 1px solid #2c2c2c;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #f54768;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav ul li a {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #cccccc;
+        transition: 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #f54768;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3rem;
+        flex-wrap: wrap;
+        min-height: 100vh;
+      }
+
+      .info-box {
+        flex: 1 1 30%;
+        text-align: center;
+      }
+
+      .info-box h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+
+      .info-box h1 span {
+        color: #f54768;
+      }
+
+      .info-box p {
+        color: #cccccc;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .cta-buttons a {
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s ease;
+      }
+
+      .btn-primary {
+        background-color: #f54768;
+        color: #ffffff;
+      }
+
+      .btn-primary:hover {
+        background-color: #d43d5b;
+      }
+
+      .btn-outline {
+        border: 2px solid #f54768;
+        color: #f54768;
+        background: transparent;
+      }
+
+      .btn-outline:hover {
+        background-color: #f54768;
+        color: #ffffff;
+      }
+
+      .profile-img {
+        flex: 1 1 30%;
+        text-align: center;
+      }
+
+      .profile-img img {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        object-fit: fill;
+        border: 4px solid #f54768;
+        box-shadow: 0 0 30px rgba(245, 71, 104, 0.4);
+        background-color: #1c1c1e;
+      }
+
+      .socials {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 1.2rem;
+        justify-content: center;
+      }
+
+      .socials a img {
+        width: 28px;
+        height: 28px;
+        filter: invert(1);
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 3px;
+        transition: 0.3s;
+      }
+
+      .socials a img:hover {
+        filter: brightness(1.1) contrast(1.2);
+      }
+
+      @media (max-width: 992px) {
+        .container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .info-box,
+        .profile-img {
+          flex: 1 1 100%;
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Yash Rana</div>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="info-box">
+        <h1>Hi, I'm <span>Data Scientist</span></h1>
+        <p>
+          A passionate Data Scientist & AI Developer focused on building smart,
+          scalable tech. Let’s build something impactful together!
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="btn-primary">Download Resume</a>
+          <a href="#" class="btn-outline">Let's Connect</a>
+        </div>
+        <div class="socials">
+          <a href="https://linkedin.com" target="_blank"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn"
+          /></a>
+          <a href="https://github.com" target="_blank"
+            ><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+          /></a>
+          <a href="https://leetcode.com" target="_blank"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+              alt="LeetCode"
+          /></a>
+        </div>
+      </div>
+
+      <div class="profile-img">
+        <img src="New Image.jpg" alt="Profile Image" />
+      </div>
+
+      <div class="info-box">
+        <h1>Welcome!</h1>
+        <p>
+          Based in India, I specialize in Data Science, Machine Learning and
+          Automation. I love solving real-world problems with elegant code and
+          meaningful insights.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
